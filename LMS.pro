@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addprofessor.cpp \
     main.cpp \
     mainwindow.cpp \
     person.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
     subject.cpp
 
 HEADERS += \
+    addprofessor.h \
     mainwindow.h \
     person.h \
     professor.h \
@@ -24,6 +26,7 @@ HEADERS += \
     subject.h
 
 FORMS += \
+    addprofessor.ui \
     mainwindow.ui
 
 # Default rules for deployment.
