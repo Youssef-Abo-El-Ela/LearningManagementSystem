@@ -1,6 +1,7 @@
 #include "addprofessor.h"
 #include "mainwindow.h"
 #include "professor.h"
+#include "addclass.h"
 #include "student.h"
 #include "iostream"
 #include "fstream"
@@ -38,5 +39,7 @@ int main(int argc, char *argv[])
     w.show();
     AddProfessor c;
     c.show();
+    AddClass cl;
+    cl.show();
     return a.exec();
 }

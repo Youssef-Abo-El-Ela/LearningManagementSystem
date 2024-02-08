@@ -1,7 +1,7 @@
 #include "subject.h"
 #include <stdexcept>
 
-Subject::Subject(string name, string code, string hall, int time_hour, int time_min) {
+Subject::Subject(string name, string code, string hall, string time) {
     if(name[0]< 'A' || name[0] > 'Z' || name.empty()){
         throw invalid_argument("Please check the Subject Name and write the first letter of the subject name as a capital letter");
     }
@@ -15,8 +15,7 @@ Subject::Subject(string name, string code, string hall, int time_hour, int time_
     this->name = name;
     this->code = code;
     this->hall = hall;
-    if(time_hour>23 || time_hour<0 || time_min<0 || time_min>59)
-        throw invalid_argument("Time entered is not valid");
+    this->time = time;
 }
 
 bool Subject::define_sub_prof(string professor_name){

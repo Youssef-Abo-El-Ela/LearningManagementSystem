@@ -10,11 +10,10 @@ public:
     string name;
     string code;
     string hall;
-    string time_hour;
-    string time_min;
+    string time;
     vector<string> teaching_professors;
     vector<string> enrolled_students;
-    Subject(string name, string code, string hall, int time_hour, int time_min);
+    Subject(string name, string code, string hall, string time);
     bool define_sub_prof(string);
     bool define_sub_stud(string);
 };
