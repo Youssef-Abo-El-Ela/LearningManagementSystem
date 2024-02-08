@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     addprofessor.cpp \
+    addstudent.cpp \
     main.cpp \
     mainwindow.cpp \
     person.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 
 HEADERS += \
     addprofessor.h \
+    addstudent.h \
     mainwindow.h \
     person.h \
     professor.h \
@@ -27,6 +29,7 @@ HEADERS += \
 
 FORMS += \
     addprofessor.ui \
+    addstudent.ui \
     mainwindow.ui
 
 # Default rules for deployment.

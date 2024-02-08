@@ -5,7 +5,7 @@
 #include "iostream"
 #include "fstream"
 #include <QApplication>
-
+#include "addstudent.h"
 using namespace std;
 fstream export_csv;
 
@@ -38,5 +38,7 @@ int main(int argc, char *argv[])
     w.show();
     AddProfessor c;
     c.show();
+    AddStudent s;
+    s.show();
     return a.exec();
 }
