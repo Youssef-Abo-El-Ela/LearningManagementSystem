@@ -15,3 +15,4 @@ public:
     bool add_prof_sub(Subject);
 };
 #endif // PROFESSOR_H
+

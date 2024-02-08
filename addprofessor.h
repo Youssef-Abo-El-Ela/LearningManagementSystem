@@ -1,9 +1,10 @@
 #ifndef ADDPROFESSOR_H
 #define ADDPROFESSOR_H
 
-#include "professor.h"
 #include <QWidget>
-extern Professor prof;
+#include "professor.h"
+static vector<Professor> professors;
+
 namespace Ui {
 class AddProfessor;
 }
@@ -15,7 +16,6 @@ class AddProfessor : public QWidget
 public:
     explicit AddProfessor(QWidget *parent = nullptr);
     ~AddProfessor();
-
 private slots:
     void on_submit_prof_clicked();
 

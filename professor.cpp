@@ -19,3 +19,5 @@ bool Professor::add_prof_sub(Subject subject){
     this->explained_subjects.push_back(subject.name);
     return true;
 }
+
+

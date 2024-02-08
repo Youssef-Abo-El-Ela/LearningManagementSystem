@@ -1,8 +1,9 @@
 #include "addprofessor.h"
 #include "ui_addprofessor.h"
-#include "professor.h"
 #include <QPixmap>
+#include <iostream>
 
+using namespace std;
 AddProfessor::AddProfessor(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::AddProfessor)
@@ -26,5 +27,7 @@ void AddProfessor::on_submit_prof_clicked()
     string email = ui->email_prof_input->text().toStdString();
     string title = ui->title_prof_input->text().toStdString();
     Professor prof(prof_first_name,prof_last_name,age,phone,email,title);
+    professors.push_back(prof);
+    cout<<professors[0].f_name<<endl;
 }
 
