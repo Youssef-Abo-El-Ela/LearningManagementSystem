@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     addclass.cpp \
     addprofessor.cpp \
+    addstudent.cpp \
     main.cpp \
     mainwindow.cpp \
     person.cpp \
@@ -22,6 +23,7 @@ SOURCES += \
 HEADERS += \
     addclass.h \
     addprofessor.h \
+    addstudent.h \
     mainwindow.h \
     person.h \
     professor.h \
@@ -34,6 +36,8 @@ FORMS += \
     addprofessor.ui \
     mainwindow.ui \
     showprofessors.ui
+    addstudent.ui \
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
