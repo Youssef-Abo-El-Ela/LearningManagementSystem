@@ -5,6 +5,7 @@
 #include "showprofessors.h"
 #include "showstudents.h"
 #include "student.h"
+#include "showclass.h"
 #include "iostream"
 #include "fstream"
 #include <QApplication>
@@ -43,6 +44,9 @@ int main(int argc, char *argv[])
     w.show();
     // ShowProfessors pr;
     // pr.show();
+    ShowClass cls;
+    cls.show();
+
     showstudents st;
     st.show();
     return a.exec();
