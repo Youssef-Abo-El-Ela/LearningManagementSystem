@@ -3,6 +3,7 @@
 #include "professor.h"
 #include "addclass.h"
 #include "showprofessors.h"
+#include "showstudents.h"
 #include "student.h"
 #include "iostream"
 #include "fstream"
@@ -40,7 +41,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    ShowProfessors pr;
-    pr.show();
+    // ShowProfessors pr;
+    // pr.show();
+    showstudents st;
+    st.show();
     return a.exec();
 }
