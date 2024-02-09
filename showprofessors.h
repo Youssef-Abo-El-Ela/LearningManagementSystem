@@ -15,6 +15,11 @@ public:
     explicit ShowProfessors(QWidget *parent = nullptr);
     ~ShowProfessors();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_clicked(bool checked);
+
 private:
     Ui::ShowProfessors *ui;
 };

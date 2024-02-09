@@ -34,6 +34,7 @@ HEADERS += \
 FORMS += \
     addclass.ui \
     addprofessor.ui \
+    addstudent.ui \
     mainwindow.ui \
     showprofessors.ui
     addstudent.ui \

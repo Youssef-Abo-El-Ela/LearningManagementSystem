@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>900</width>
-    <height>600</height>
+    <width>668</width>
+    <height>561</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,7 +57,7 @@
     <rect>
      <x>140</x>
      <y>200</y>
-     <width>71</width>
+     <width>81</width>
      <height>21</height>
     </rect>
    </property>
@@ -107,7 +107,7 @@
   <widget class="QLineEdit" name="firstname_text">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>230</x>
      <y>160</y>
      <width>113</width>
      <height>20</height>
@@ -117,7 +117,7 @@
   <widget class="QLineEdit" name="secondname_text">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>230</x>
      <y>200</y>
      <width>113</width>
      <height>20</height>
@@ -127,7 +127,7 @@
   <widget class="QLineEdit" name="age_text">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>230</x>
      <y>240</y>
      <width>113</width>
      <height>20</height>
@@ -137,7 +137,7 @@
   <widget class="QLineEdit" name="phone_text">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>230</x>
      <y>280</y>
      <width>113</width>
      <height>20</height>
@@ -147,7 +147,7 @@
   <widget class="QLineEdit" name="email_text">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>230</x>
      <y>320</y>
      <width>113</width>
      <height>20</height>
@@ -157,7 +157,7 @@
   <widget class="QLineEdit" name="grade_text">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>230</x>
      <y>360</y>
      <width>113</width>
      <height>20</height>

@@ -7,7 +7,7 @@ AddStudent::AddStudent(QWidget *parent)
     , ui(new Ui::AddStudent)
 {
     ui->setupUi(this);
-    QPixmap pix("D:/MIDPROJECT/LearningManagementSystem/Pics/Background");
+    QPixmap pix("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/LearningManagementSystem/Pics/Background.png");
     ui->background_img->setPixmap(pix);
 }
 
@@ -26,6 +26,5 @@ void AddStudent::on_submit_button_clicked()
     string grade =ui->grade_text->text().toStdString();
     Student stud(stud_first_name,stud_last_name,age,phone,email,grade);
     students.push_back(stud);
-    cout<<students[0].f_name<<'\n';
 }
 
