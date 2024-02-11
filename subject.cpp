@@ -17,7 +17,9 @@ Subject::Subject(string name, string code, string hall, string time) {
     this->hall = hall;
     this->time = time;
 }
-
+bool Subject::add_class(Subject class_details){
+    this->existing_classes.push_back(class_details);
+}
 bool Subject::define_sub_prof(string professor_name){
     this->teaching_professors.push_back(professor_name);
     return true;

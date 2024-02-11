@@ -10,6 +10,8 @@
 #include "fstream"
 #include <QApplication>
 #include "addstudent.h"
+#include "addstudenttoclass.h"
+#include "subject.h"
 using namespace std;
 fstream export_csv;
 
@@ -44,10 +46,15 @@ int main(int argc, char *argv[])
     w.show();
     // ShowProfessors pr;
     // pr.show();
-    ShowClass cls;
-    cls.show();
-
+    // ShowClass cls;
+    // cls.show();
+    AddStudentToClass ASC;
+    ASC.show();
     showstudents st;
     st.show();
+    Subject cls("Abc","SBE2003","3333","1PM");
+    for (int i=0;i<cls.enrolled_students.size();i++){
+        cout<<cls.enrolled_students[i];
+    }
     return a.exec();
 }
