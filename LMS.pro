@@ -12,6 +12,7 @@ SOURCES += \
     addclass.cpp \
     addprofessor.cpp \
     addstudent.cpp \
+    addstudenttoclass.cpp \
     main.cpp \
     mainwindow.cpp \
     person.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     addclass.h \
     addprofessor.h \
     addstudent.h \
+    addstudenttoclass.h \
     mainwindow.h \
     person.h \
     professor.h \
@@ -39,6 +41,7 @@ FORMS += \
     addclass.ui \
     addprofessor.ui \
     addstudent.ui \
+    addstudenttoclass.ui \
     mainwindow.ui \
     show.ui \
     showclasses.ui \
