@@ -2,7 +2,6 @@
 #include "addstudent.h"
 #include "ui_addstudent.h"
 #include <QPixmap>
-#include "student.h"
 AddStudent::AddStudent(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::AddStudent)

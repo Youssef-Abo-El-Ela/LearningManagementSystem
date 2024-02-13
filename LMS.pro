@@ -16,9 +16,9 @@ SOURCES += \
     mainwindow.cpp \
     person.cpp \
     professor.cpp \
-    showclass.cpp \
+    show.cpp \
+    showclasses.cpp \
     showprofessors.cpp \
-    showstudents.cpp \
     student.cpp \
     subject.cpp
 
@@ -29,9 +29,9 @@ HEADERS += \
     mainwindow.h \
     person.h \
     professor.h \
-    showclass.h \
+    show.h \
+    showclasses.h \
     showprofessors.h \
-    showstudents.h \
     student.h \
     subject.h
 
@@ -40,9 +40,9 @@ FORMS += \
     addprofessor.ui \
     addstudent.ui \
     mainwindow.ui \
-    showclass.ui \
-    showprofessors.ui \
-    showstudents.ui
+    show.ui \
+    showclasses.ui \
+    showprofessors.ui
     addstudent.ui \
 
 
