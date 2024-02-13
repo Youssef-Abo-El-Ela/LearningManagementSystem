@@ -29,3 +29,4 @@ bool Subject::define_sub_stud(string student_name){
     this->enrolled_students.push_back(student_name);
     return true;
 }
+

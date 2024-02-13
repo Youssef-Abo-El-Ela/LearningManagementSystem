@@ -16,6 +16,7 @@ public:
     vector <Subject> existing_classes;
     Subject(string name, string code, string hall, string time);
     bool define_sub_prof(string);
+    bool define_prof_sub(string);
     bool define_sub_stud(string);
     bool add_class(Subject);
 };
