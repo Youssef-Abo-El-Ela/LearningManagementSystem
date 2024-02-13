@@ -28,6 +28,5 @@ void AddProfessor::on_submit_prof_clicked()
     string title = ui->title_prof_input->text().toStdString();
     Professor prof(prof_first_name,prof_last_name,age,phone,email,title);
     professors.push_back(prof);
-    cout<<professors[0].f_name<<endl;
 }
 

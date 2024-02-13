@@ -21,6 +21,8 @@ public:
 private slots:
     void on_class_submit_clicked();
 
+    void on_back_button_clicked();
+
 private:
     Ui::AddClass *ui;
 };

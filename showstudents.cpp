@@ -16,12 +16,13 @@ showstudents::~showstudents()
 
 void showstudents::on_pushButton_clicked()
 {
-    Student s1("Ahmed","Essam",20,"01063231932","test@test.com","A+");
-    Student s2("Mohamed","Khaled",21,"01223739744","test2@test.com","B+");
-    Student s3("Kamel","Raafat",22,"01063739744","test3@test.com","C+");
-    students.push_back(s1);
-    students.push_back(s2);
-    students.push_back(s3);
+    // Student s1("Ahmed","Essam",20,"01063231932","test@test.com","A+");
+    // Student s2("Mohamed","Khaled",21,"01223739744","test2@test.com","B+");
+    // Student s3("Kamel","Raafat",22,"01063739744","test3@test.com","C+");
+    // students.push_back(s1);
+    // students.push_back(s2);
+    // students.push_back(s3);
+
     for (unsigned int i=0; i<students.size(); i++ )
     {
         this->ui->tableWidget->insertRow(i);

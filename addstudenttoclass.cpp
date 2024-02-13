@@ -21,12 +21,6 @@ void AddStudentToClass::on_submit_button_clicked()
 {
     string stud_first_name=ui->firstname_text->text().toStdString();
     string stud_last_name=ui->secondname_text->text().toStdString();
-    int  age =ui->age_text->text().toInt();
-    string phone =ui->phone_text->text().toStdString();
-    string email =ui->email_text->text().toStdString();
-    string grade =ui->grade_text->text().toStdString();
-    Student stud(stud_first_name,stud_last_name,age,phone,email,grade);
-    students.push_back(stud);
     Subject sub1("Abc","SBE2003","3333","1PM");
     Subject sub2("Adc","SbE2003","6633","2PM");
     Subject sub3("Fgf","SBE3003","3223","3PM");
@@ -36,7 +30,7 @@ void AddStudentToClass::on_submit_button_clicked()
     classes.push_back(sub3);
     string cls_name=ui->clasname->text().toStdString();
     bool flag=0;
-    for (int i=0;i<classes.size();i++){
+    for (unsigned int i=0;i<classes.size();i++){
         cout<<classes.size();
         cout<<classes[i].name;
         if (classes[i].name==cls_name){
@@ -52,7 +46,6 @@ void AddStudentToClass::on_submit_button_clicked()
     else{
         cout<<"ENTER EXISTING CLASS"<<'\n';
     }
-
 
 }
 

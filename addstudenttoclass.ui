@@ -39,19 +39,6 @@
     <string>Add To Class</string>
    </property>
   </widget>
-  <widget class="QLabel" name="phone_label">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>270</y>
-     <width>37</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Phone</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="submit_button">
    <property name="geometry">
     <rect>
@@ -78,19 +65,6 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;textlabel&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="email_text">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>310</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add To Class</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="firstname_label">
    <property name="geometry">
     <rect>
@@ -104,71 +78,6 @@
     <string>First Name </string>
    </property>
   </widget>
-  <widget class="QLabel" name="email_label">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>310</y>
-     <width>37</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Email</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="grade_label">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>350</y>
-     <width>37</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Grade</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="age_text">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>230</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add To Class</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="age_label">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>230</y>
-     <width>37</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Age</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="phone_text">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>270</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add To Class</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="info_label">
    <property name="geometry">
     <rect>
@@ -180,19 +89,6 @@
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#17252a;&quot;&gt;Student Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="grade_text">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>350</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add To Class</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="firstname_text">
@@ -234,17 +130,9 @@
   <zorder>background_img</zorder>
   <zorder>secondname_label</zorder>
   <zorder>secondname_text</zorder>
-  <zorder>phone_label</zorder>
   <zorder>submit_button</zorder>
-  <zorder>email_text</zorder>
   <zorder>firstname_label</zorder>
-  <zorder>email_label</zorder>
-  <zorder>grade_label</zorder>
-  <zorder>age_text</zorder>
-  <zorder>age_label</zorder>
-  <zorder>phone_text</zorder>
   <zorder>info_label</zorder>
-  <zorder>grade_text</zorder>
   <zorder>firstname_text</zorder>
   <zorder>label</zorder>
   <zorder>clasname</zorder>

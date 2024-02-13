@@ -18,6 +18,12 @@ public:
 private slots:
     void on_classes_clicked();
 
+    void on_students_clicked();
+
+    void on_professors_clicked();
+
+    void on_search_clicked();
+
 private:
     Ui::Show *ui;
 };
