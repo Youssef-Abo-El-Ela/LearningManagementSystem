@@ -2,10 +2,10 @@
 #include "mainwindow.h"
 #include "professor.h"
 #include "addclass.h"
-#include "show.h"
-#include "showclasses.h"
 #include "showprofessors.h"
+#include "showstudents.h"
 #include "student.h"
+#include "showclass.h"
 #include "iostream"
 #include "fstream"
 #include <QApplication>
@@ -21,12 +21,12 @@ int main(int argc, char *argv[])
     // Student students[]={s1,s2,s3};
 
 
-    // Professor p1("Mohamed","Eslam",71,"01234567890","p1@test.com","electronicsprof");
-    // Professor p2("Sherif","Samy",50,"08765432100","p2@test.com","measurementsprof");
-    // Professor p3("Ghaidaa","Eldeeb",35,"05678912300","p3@test.com","ta");
-    // professors.push_back(p1);
-    // professors.push_back(p2);
-    // professors.push_back(p3);
+    Professor p1("Mohamed","Eslam",71,"01234567890","p1@test.com","electronicsprof");
+    Professor p2("Sherif","Samy",50,"08765432100","p2@test.com","measurementsprof");
+    Professor p3("Ghaidaa","Eldeeb",35,"05678912300","p3@test.com","ta");
+    professors.push_back(p1);
+    professors.push_back(p2);
+    professors.push_back(p3);
 
     // Subject Electronics("Electronics","ELN","3201",10,0);
     // s1.add_stud_class(Electronics,"A");
@@ -42,7 +42,12 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    Show cll;
-    cll.show();
+    // ShowProfessors pr;
+    // pr.show();
+    ShowClass cls;
+    cls.show();
+
+    showstudents st;
+    st.show();
     return a.exec();
 }
