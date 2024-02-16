@@ -30,7 +30,6 @@ SOURCES += \
 HEADERS += \
     addclass.h \
     addprofessor.h \
-    addprofessortoclass.h \
     addstudent.h \
     addstudenttoclass.h \
     edit.h \
