@@ -19,6 +19,8 @@ public:
 private slots:
     void on_submit_prof_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::AddProfessor *ui;
 };

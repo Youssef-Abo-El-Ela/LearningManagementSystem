@@ -4,7 +4,7 @@
 #include "showprofessors.h"
 #include "showstudents.h"
 #include "ui_show.h"
-
+#include"welcome.h"
 Show::Show(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Show)
@@ -48,5 +48,13 @@ void Show::on_search_clicked()
     QWidget *search_page = new Search();
     this->hide();
     search_page->show();
+}
+
+
+void Show::on_pushButton_clicked()
+{
+    QWidget *welcme = new Welcome;
+    this->hide();
+    welcme->show();
 }
 

@@ -4,6 +4,7 @@
 #include "professor.h"
 #include "addclass.h"
 #include "addprofessor.h"
+#include "edit.h"
 using namespace std;
 #include <iostream>
 addprofessortoclass::addprofessortoclass(QWidget *parent)
@@ -52,5 +53,13 @@ void addprofessortoclass::on_submit_button_clicked()
     }
 
 
+}
+
+
+void addprofessortoclass::on_pushButton_clicked()
+{
+    QWidget *edt = new Edit ;
+    this->hide();
+    edt->show();
 }
 

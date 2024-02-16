@@ -26,6 +26,8 @@ private slots:
 
     void on_add_stud_to_class_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Edit *ui;
 };

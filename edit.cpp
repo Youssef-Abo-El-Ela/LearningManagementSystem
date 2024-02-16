@@ -4,7 +4,8 @@
 #include "addstudent.h"
 #include "addstudenttoclass.h"
 #include "ui_edit.h"
-
+#include "welcome.h"
+#include "addprofessortoclass.h"
 Edit::Edit(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Edit)
@@ -45,8 +46,9 @@ void Edit::on_add_class_clicked()
 
 void Edit::on_add_prof_to_class_clicked()
 {
-    QWidget *add_professor_to_class_page;
+    QWidget *add_professor_to_class_page=new addprofessortoclass;
     this->hide();
+    add_professor_to_class_page->show();
 }
 
 
@@ -55,5 +57,13 @@ void Edit::on_add_stud_to_class_clicked()
     QWidget *add_student_to_class_page = new AddStudentToClass();
     this->hide();
     add_student_to_class_page->show();
+}
+
+
+void Edit::on_pushButton_clicked()
+{
+    QWidget *welcme = new Welcome ;
+    this->hide();
+    welcme->show();
 }
 

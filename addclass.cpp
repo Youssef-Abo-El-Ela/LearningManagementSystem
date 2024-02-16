@@ -3,6 +3,7 @@
 #include <QPixmap>
 #include "subject.h"
 #include "welcome.h"
+#include "edit.h"
 using namespace std;
 
 AddClass::AddClass(QWidget *parent)
@@ -34,7 +35,8 @@ void AddClass::on_class_submit_clicked()
 
 void AddClass::on_back_button_clicked()
 {
+    QWidget *edt = new Edit ;
     this->hide();
-
+    edt->show();
 }
 

@@ -1,7 +1,7 @@
 #include "showclasses.h"
 #include "addclass.h"
 #include "ui_showclasses.h"
-
+#include "show.h"
 ShowClasses::ShowClasses(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::ShowClasses)
@@ -27,5 +27,13 @@ void ShowClasses::on_pushButton_clicked()
         this->ui->listWidget->addItem(new QListWidgetItem((classes[i].name).c_str()));
     }
     this->ui->pushButton->setEnabled(false);
+}
+
+
+void ShowClasses::on_pushButton_2_clicked()
+{
+    QWidget *shw = new Show  ;
+    this->hide();
+    shw->show();
 }
 

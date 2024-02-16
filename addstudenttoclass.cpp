@@ -4,6 +4,7 @@
 #include "student.h"
 #include "addclass.h"
 #include "addstudent.h"
+#include "edit.h"
 #include <iostream>
 AddStudentToClass::AddStudentToClass(QWidget *parent)
     : QWidget(parent)
@@ -47,5 +48,13 @@ void AddStudentToClass::on_submit_button_clicked()
         cout<<"ENTER EXISTING CLASS"<<'\n';
     }
 
+}
+
+
+void AddStudentToClass::on_pushButton_clicked()
+{
+    QWidget *edt = new Edit ;
+    this->hide();
+    edt->show();
 }
 

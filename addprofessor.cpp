@@ -2,7 +2,7 @@
 #include "ui_addprofessor.h"
 #include <QPixmap>
 #include <iostream>
-
+#include "edit.h"
 using namespace std;
 AddProfessor::AddProfessor(QWidget *parent)
     : QWidget(parent)
@@ -28,5 +28,13 @@ void AddProfessor::on_submit_prof_clicked()
     string title = ui->title_prof_input->text().toStdString();
     Professor prof(prof_first_name,prof_last_name,age,phone,email,title);
     professors.push_back(prof);
+}
+
+
+void AddProfessor::on_pushButton_clicked()
+{
+    QWidget *edt = new Edit ;
+    this->hide();
+    edt->show();
 }
 

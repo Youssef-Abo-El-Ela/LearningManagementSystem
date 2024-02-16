@@ -1,6 +1,7 @@
 #include "showstudents.h"
 #include "addstudent.h"
 #include "ui_showstudents.h"
+#include "show.h"
 
 showstudents::showstudents(QWidget *parent)
     : QDialog(parent)
@@ -63,3 +64,12 @@ void showstudents::on_pushButton_clicked()
     }
     this->ui->pushButton->setEnabled(false);
 }
+
+void showstudents::on_pushButton_2_clicked()
+{
+
+    QWidget *sh = new Show;
+    this->hide();
+    sh->show();
+}
+

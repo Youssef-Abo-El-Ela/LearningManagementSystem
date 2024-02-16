@@ -2,6 +2,7 @@
 #include "addstudent.h"
 #include "ui_addstudent.h"
 #include <QPixmap>
+#include <edit.h>
 AddStudent::AddStudent(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::AddStudent)
@@ -26,5 +27,13 @@ void AddStudent::on_submit_button_clicked()
     string grade =ui->grade_text->text().toStdString();
     Student stud(stud_first_name,stud_last_name,age,phone,email,grade);
     students.push_back(stud);
+}
+
+
+void AddStudent::on_pushButton_clicked()
+{
+    QWidget *edt = new Edit ;
+    this->hide();
+    edt->show();
 }
 

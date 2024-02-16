@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     addclass.cpp \
     addprofessor.cpp \
+    addprofessortoclass.cpp \
     addstudent.cpp \
     addstudenttoclass.cpp \
     edit.cpp \
@@ -30,6 +31,7 @@ SOURCES += \
 HEADERS += \
     addclass.h \
     addprofessor.h \
+    addprofessortoclass.h \
     addstudent.h \
     addstudenttoclass.h \
     edit.h \
@@ -48,6 +50,7 @@ HEADERS += \
 FORMS += \
     addclass.ui \
     addprofessor.ui \
+    addprofessortoclass.ui \
     addstudent.ui \
     addstudenttoclass.ui \
     edit.ui \
