@@ -36,13 +36,13 @@
     </rect>
    </property>
    <property name="text">
-    <string>Add To Class</string>
+    <string>Second Name</string>
    </property>
   </widget>
   <widget class="QPushButton" name="submit_button">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>490</x>
      <y>220</y>
      <width>81</width>
      <height>41</height>
@@ -101,7 +101,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Add To Class</string>
+    <string>First Name</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -109,7 +109,7 @@
     <rect>
      <x>400</x>
      <y>190</y>
-     <width>51</width>
+     <width>71</width>
      <height>21</height>
     </rect>
    </property>
@@ -120,7 +120,7 @@
   <widget class="QLineEdit" name="clasname">
    <property name="geometry">
     <rect>
-     <x>460</x>
+     <x>480</x>
      <y>190</y>
      <width>101</width>
      <height>20</height>
@@ -140,6 +140,32 @@
     <string>Back</string>
    </property>
   </widget>
+  <widget class="QLabel" name="grade_label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>230</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Grade</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="grade_text">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>230</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Grade</string>
+   </property>
+  </widget>
   <zorder>background_img</zorder>
   <zorder>secondname_label</zorder>
   <zorder>secondname_text</zorder>
@@ -150,6 +176,8 @@
   <zorder>label</zorder>
   <zorder>clasname</zorder>
   <zorder>pushButton</zorder>
+  <zorder>grade_label</zorder>
+  <zorder>grade_text</zorder>
  </widget>
  <resources/>
  <connections/>

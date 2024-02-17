@@ -3,7 +3,6 @@
 
 #include <QWidget>
 #include <student.h>
-static vector<Student> students;
 namespace Ui {
 class AddStudent;
 }

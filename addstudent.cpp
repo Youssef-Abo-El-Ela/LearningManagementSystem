@@ -1,5 +1,5 @@
-#include "iostream"
 #include "addstudent.h"
+#include "globals.h"
 #include "ui_addstudent.h"
 #include <QPixmap>
 #include <edit.h>

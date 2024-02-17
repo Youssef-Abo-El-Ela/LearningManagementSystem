@@ -12,12 +12,12 @@ public:
     string hall;
     string time;
     vector<string> teaching_professors;
-    vector<string> enrolled_students;
+    vector<pair<string,string>> enrolled_students;
     vector <Subject> existing_classes;
     Subject(string name, string code, string hall, string time);
     bool define_sub_prof(string);
     bool define_prof_sub(string);
-    bool define_sub_stud(string);
+    bool define_sub_stud(string,string);
     bool add_class(Subject);
 };
 

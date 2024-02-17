@@ -1,8 +1,8 @@
 #include "addclass.h"
+#include "globals.h"
 #include "ui_addclass.h"
 #include <QPixmap>
 #include "subject.h"
-#include "welcome.h"
 #include "edit.h"
 using namespace std;
 

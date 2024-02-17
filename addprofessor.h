@@ -3,7 +3,6 @@
 
 #include <QWidget>
 #include "professor.h"
-static vector<Professor> professors;
 
 namespace Ui {
 class AddProfessor;

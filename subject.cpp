@@ -25,8 +25,9 @@ bool Subject::define_sub_prof(string professor_name){
     return true;
 }
 
-bool Subject::define_sub_stud(string student_name){
-    this->enrolled_students.push_back(student_name);
+bool Subject::define_sub_stud(string student_name , string grade)
+{
+    this->enrolled_students.push_back({student_name,grade});
     return true;
 }
 

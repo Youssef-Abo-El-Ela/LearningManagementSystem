@@ -1,5 +1,5 @@
 #include "showstudents.h"
-#include "addstudent.h"
+#include "globals.h"
 #include "ui_showstudents.h"
 #include "show.h"
 
@@ -23,7 +23,6 @@ void showstudents::on_pushButton_clicked()
     // students.push_back(s1);
     // students.push_back(s2);
     // students.push_back(s3);
-
     for (unsigned int i=0; i<students.size(); i++ )
     {
         this->ui->tableWidget->insertRow(i);

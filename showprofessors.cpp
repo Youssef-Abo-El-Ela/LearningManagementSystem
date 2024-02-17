@@ -1,5 +1,5 @@
 #include "showprofessors.h"
-#include "addprofessor.h"
+#include "globals.h"
 #include "ui_showprofessors.h"
 #include "show.h"
 ShowProfessors::ShowProfessors(QWidget *parent)

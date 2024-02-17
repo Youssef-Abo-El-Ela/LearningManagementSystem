@@ -1,7 +1,7 @@
 #include "addprofessor.h"
+#include "globals.h"
 #include "ui_addprofessor.h"
 #include <QPixmap>
-#include <iostream>
 #include "edit.h"
 using namespace std;
 AddProfessor::AddProfessor(QWidget *parent)

@@ -1,4 +1,6 @@
 #include "showclass.h"
+#include "globals.h"
+#include "qlistwidget.h"
 #include "ui_showclass.h"
 #include "addclass.h"
 #include "addstudent.h"
@@ -25,34 +27,42 @@ ShowClass::~ShowClass()
 
 void ShowClass::on_ok_button_clicked()
 {
-    Student s1("Ahmed","Essam",20,"01063231932","test@test.com","A+");
-    Student s2("Mohamed","Khaled",21,"01223739744","test2@test.com","B+");
-    Student s3("Kamel","Raafat",22,"01063739744","test3@test.com","C+");
-    students.push_back(s1);
-    students.push_back(s2);
-    students.push_back(s3);
-    Subject sub("Abs","Sbe2203","3201","1PM-3PM");
-    sub.teaching_professors.push_back("Ahmed");
-    sub.teaching_professors.push_back("Mohamed");
-    this->ui->toClass->setText(QString::fromStdString(sub.name));
-    this->ui->toLecture->setText(QString::fromStdString(sub.hall));
-    this->ui->toTime->setText(QString::fromStdString(sub.time));
+    // Student s1("Ahmed","Essam",20,"01063231932","test@test.com","A+");
+    // Student s2("Mohamed","Khaled",21,"01223739744","test2@test.com","B+");
+    // Student s3("Kamel","Raafat",22,"01063739744","test3@test.com","C+");
+    // students.push_back(s1);
+    // students.push_back(s2);
+    // students.push_back(s3);
+    // Subject sub("Abs","Sbe2203","3201","1PM-3PM");
+    // sub.teaching_professors.push_back("Ahmed");
+    // sub.teaching_professors.push_back("Mohamed");
+    int position = 0;
+    for (unsigned int i=0; i < classes.size(); i++ )
+    {
+        if(classes[i].name == class_name)
+            position = i;
+    }
 
-    for (unsigned int j=0; j<sub.teaching_professors.size() ; j++){
-        this->ui->toProf->setText(QString::fromStdString(sub.teaching_professors[j]));
+    this->ui->toClass->setText(QString::fromStdString(classes[position].name));
+    this->ui->toProf->setText(QString::fromStdString(classes[position].teaching_professors[0]));
+    this->ui->toLecture->setText(QString::fromStdString(classes[position].hall));
+    this->ui->toTime->setText(QString::fromStdString(classes[position].time));
+
+    for (unsigned int j=0; j<classes[position].teaching_professors.size() ; j++){
+        this->ui->toProf->setText(QString::fromStdString(classes[position].teaching_professors[j]));
     }
 
     for (unsigned int i=0; i<students.size(); i++ )
     {
         this->ui->tableWidget->insertRow(i);
     }
-    for (unsigned int r=0; r<students.size(); r++){
+    for (unsigned int r=0; r<classes[position].enrolled_students.size(); r++){
         for (unsigned int c=0; c<2;c++){
             if(c==0){
-                this->ui->tableWidget->setItem(r,c,new QTableWidgetItem((students[r].f_name+students[r].l_name).c_str()));
+                this->ui->tableWidget->setItem(r,c,new QTableWidgetItem((classes[position].enrolled_students[r].first).c_str()));
             }
             else{
-                this->ui->tableWidget->setItem(r,c,new QTableWidgetItem((students[r].grade).c_str()));
+                this->ui->tableWidget->setItem(r,c,new QTableWidgetItem(classes[position].enrolled_students[r].second.c_str()));
             }
         }
     }

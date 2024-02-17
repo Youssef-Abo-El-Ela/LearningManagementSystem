@@ -15,12 +15,14 @@ SOURCES += \
     addstudent.cpp \
     addstudenttoclass.cpp \
     edit.cpp \
+    globals.cpp \
     main.cpp \
     mainwindow.cpp \
     person.cpp \
     professor.cpp \
     search.cpp \
     show.cpp \
+    showclass.cpp \
     showclasses.cpp \
     showprofessors.cpp \
     showstudents.cpp \
@@ -35,11 +37,13 @@ HEADERS += \
     addstudent.h \
     addstudenttoclass.h \
     edit.h \
+    globals.h \
     mainwindow.h \
     person.h \
     professor.h \
     search.h \
     show.h \
+    showclass.h \
     showclasses.h \
     showprofessors.h \
     showstudents.h \
@@ -57,6 +61,7 @@ FORMS += \
     mainwindow.ui \
     search.ui \
     show.ui \
+    showclass.ui \
     showclasses.ui \
     showprofessors.ui \
     showstudents.ui \

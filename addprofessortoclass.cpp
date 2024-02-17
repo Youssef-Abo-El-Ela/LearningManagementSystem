@@ -1,4 +1,5 @@
 #include "addprofessortoclass.h"
+#include "globals.h"
 #include "ui_addprofessortoclass.h"
 #include "subject.h"
 #include "professor.h"
@@ -24,29 +25,21 @@ void addprofessortoclass::on_submit_button_clicked()
     string prof_first_name=ui->firstname_text->text().toStdString();
     string prof_last_name=ui->secondname_text->text().toStdString();
 
-    Subject sub1("Abc","SBE2003","3333","1PM");
-    Subject sub2("Adc","SbE2003","6633","2PM");
-    Subject sub3("Fgf","SBE3003","3223","3PM");
-
-    classes.push_back(sub1);
-    classes.push_back(sub2);
-    classes.push_back(sub3);
-
     string cls_name=ui->clasname->text().toStdString();
-
+    int position = 0;
     bool flag=0;
-    for (int i=0;i<classes.size();i++){
-        cout<<classes.size();
-        cout<<classes[i].name;
+    for (unsigned int i=0;i<classes.size();i++){
         if (classes[i].name==cls_name){
             flag=1;
+            position = i;
         }
     }
-    Subject cls("Abc","SBE2003","3333","1PM");
+
+
     if (flag){
 
-        cls.define_sub_prof(prof_first_name+prof_last_name);
-        cout<<cls.teaching_professors[0];
+        classes[position].define_sub_prof(prof_first_name+prof_last_name);
+
     }
     else{
         cout<<"ENTER EXISTING CLASS"<<'\n';

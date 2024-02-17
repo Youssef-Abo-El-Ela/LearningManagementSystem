@@ -1,11 +1,9 @@
 #ifndef ADDCLASS_H
 #define ADDCLASS_H
 
-#include "subject.h"
 #include <QWidget>
 using namespace std;
 
-static vector <Subject> classes;
 namespace Ui {
 class AddClass;
 }
