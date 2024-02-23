@@ -17,12 +17,6 @@ ShowProfessors::~ShowProfessors()
 void ShowProfessors::on_pushButton_clicked()
 
 {
-    Professor p1("Mohamed","Eslam",71,"01234567890","p1@test.com","electronicsprof");
-    Professor p2("Sherif","Samy",50,"08765432100","p2@test.com","measurementsprof");
-    Professor p3("Ghaidaa","Eldeeb",35,"05678912300","p3@test.com","ta");
-    professors.push_back(p1);
-    professors.push_back(p2);
-    professors.push_back(p3);
 
     for (unsigned int i=0; i<professors.size(); i++ )
     {

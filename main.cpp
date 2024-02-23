@@ -1,10 +1,9 @@
 
-#include "fstream"
 #include "mainwindow.h"
 #include <QApplication>
 
 using namespace std;
-fstream export_csv;
+
 
 int main(int argc, char *argv[])
 {
@@ -25,12 +24,6 @@ int main(int argc, char *argv[])
     // s1.add_stud_class(Electronics,"A");
     // cout<<"Student1"<<s1.f_name<<s1.l_name<<s1.student_subjects[0].first<<s1.student_subjects[0].second<<endl;
 
-    // export_csv.open("Database.csv", ios::out);
-    // export_csv <<"First Name"<<","<<"Last Name"<<","<<"Age"<<","<<"Phone"<<","<<"Email"<<","<<"GPA"<<"\n";
-    // for(unsigned int i = 0; i<size(students); i++)
-    // {
-    //     export_csv <<students[i].f_name<<","<<students[i].l_name<<","<<students[i].age<<","<<students[i].phone<<","<<students[i].email<<","<<students[i].grade<<"\n";
-    // }
 
     QApplication a(argc, argv);
     MainWindow w;

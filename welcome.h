@@ -21,6 +21,10 @@ private slots:
 
     void on_edit_button_clicked();
 
+    void on_export_button_clicked();
+
+    void on_import_button_clicked();
+
 private:
     Ui::Welcome *ui;
 };

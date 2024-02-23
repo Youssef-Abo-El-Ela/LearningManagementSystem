@@ -34,6 +34,7 @@ void Search::on_search_button_clicked()
     volatile int l=0;
     volatile int r = classes_names.size()-1;
 
+    bool search_found= false;
     if (search_for_category == "Class")
     {
         sort(classes_names.begin(),classes_names.end());
@@ -42,7 +43,8 @@ void Search::on_search_button_clicked()
             volatile int mid=(l+r)/2;
             search_for_name = this->ui->name_text->text().toStdString();
             first_letter_of_name = search_for_name[0];
-            if (classes_names[mid][0] == first_letter_of_name)
+
+            if (classes_names[mid][0] == first_letter_of_name && search_for_name.size() == 1)
             {
                 while (mid < classes_names.size() && classes_names[mid][0] == first_letter_of_name)
                 {
@@ -54,25 +56,37 @@ void Search::on_search_button_clicked()
                     mid ++;
 
                 }
+                search_found=true;
                 break;
 
             }
-
+            else if(classes_names[mid][0] == first_letter_of_name && search_for_name.size() > 1)
+            {
+                while (classes_names[mid] != search_for_name) {
+                    mid++;
+                }
+                QTableWidgetItem *item = new QTableWidgetItem(QString::fromStdString(classes_names[mid]));
+                int rowCount = this->ui->tableWidget->rowCount();
+                this->ui->tableWidget->insertRow(rowCount);
+                this->ui->tableWidget->setItem(rowCount,0,item);
+                search_found = true;
+                break;
+            }
             else if (classes_names[mid][0] < first_letter_of_name )
                 l = mid+1;
             else if (classes_names[mid][0] > first_letter_of_name)
                 r = mid-1;
-            else {
-                QTableWidgetItem *item = new QTableWidgetItem(QString::fromStdString("NO RESULTS FOUND!!"));
-                int rowCount = this->ui->tableWidget->rowCount();
-                this->ui->tableWidget->insertRow(rowCount);
-                this->ui->tableWidget->setItem(rowCount,0,item);
-                break;
-            }
         }
     }
-
+    if (search_found == false)
+    {
+        QTableWidgetItem *item = new QTableWidgetItem(QString::fromStdString("NO RESULTS FOUND!!"));
+        int rowCount = this->ui->tableWidget->rowCount();
+        this->ui->tableWidget->insertRow(rowCount);
+        this->ui->tableWidget->setItem(rowCount,0,item);
+    }
 }
+
 
 
 void Search::on_back_button_clicked()
