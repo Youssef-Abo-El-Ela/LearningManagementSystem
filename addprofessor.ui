@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>776</width>
-    <height>628</height>
+    <width>700</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="background_img">
+  <widget class="QLabel" name="background_image">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>90</y>
-     <width>500</width>
-     <height>345</height>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>500</height>
     </rect>
    </property>
    <property name="text">
@@ -29,11 +29,21 @@
   <widget class="QLabel" name="title_prof">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>150</y>
-     <width>131</width>
-     <height>31</height>
+     <x>310</x>
+     <y>40</y>
+     <width>141</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#17252a;&quot;&gt;Professor Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -42,11 +52,21 @@
   <widget class="QLabel" name="first_name_prof_label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>210</y>
-     <width>71</width>
-     <height>16</height>
+     <x>200</x>
+     <y>110</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;First Name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -55,11 +75,21 @@
   <widget class="QLabel" name="age_prof_label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>280</y>
-     <width>49</width>
-     <height>16</height>
+     <x>200</x>
+     <y>210</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Age:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -68,43 +98,145 @@
   <widget class="QLabel" name="phone_prof_label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>310</y>
-     <width>49</width>
-     <height>16</height>
+     <x>200</x>
+     <y>260</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+   </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; color:#17252a;&quot;&gt;Phone:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;Phone:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="email_prof_label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>350</y>
-     <width>49</width>
-     <height>16</height>
+     <x>200</x>
+     <y>310</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+   </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; color:#17252a;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="title_prof_label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>390</y>
-     <width>49</width>
-     <height>16</height>
+     <x>200</x>
+     <y>360</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+   </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; color:#17252a;&quot;&gt;Title:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;Title:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="first_name_prof_input">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>110</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="title_prof_input">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>360</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="phone_prof_input">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>260</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email_prof_input">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>310</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="age_prof_input">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -113,55 +245,41 @@
      <height>20</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLineEdit" name="title_prof_input">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>390</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="phone_prof_input">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>310</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="email_prof_input">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>350</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="age_prof_input">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>280</y>
-     <width>151</width>
-     <height>20</height>
-    </rect>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+}</string>
    </property>
   </widget>
   <widget class="QPushButton" name="submit_prof">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>280</y>
+     <x>520</x>
+     <y>230</y>
      <width>80</width>
-     <height>71</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0077b3; /* Medium blue background for buttons */
+    color: #FFFFFF; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding as needed */
+}
+
+QPushButton:hover {
+    background-color: #4da6ff; /* Lighter blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #005c99; /* Darker blue when pressed */
+}
+</string>
    </property>
    <property name="text">
     <string>Submit</string>
@@ -170,11 +288,21 @@
   <widget class="QLabel" name="last_name_prof_label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>240</y>
-     <width>71</width>
-     <height>16</height>
+     <x>200</x>
+     <y>160</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FFFFFF; /* White text color */
+    background-color: #004080; /* Dark blue background */
+    font-size: 10px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 8px 12px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Last Name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -184,20 +312,46 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>240</y>
+     <y>160</y>
      <width>151</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+}</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>390</y>
+     <x>100</x>
+     <y>400</y>
      <width>80</width>
-     <height>18</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0077b3; /* Medium blue background for buttons */
+    color: #FFFFFF; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding as needed */
+}
+
+QPushButton:hover {
+    background-color: #4da6ff; /* Lighter blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #005c99; /* Darker blue when pressed */
+}
+</string>
    </property>
    <property name="text">
     <string>Back</string>

@@ -16,8 +16,8 @@ ShowClass::ShowClass(QWidget *parent)
     , ui(new Ui::ShowClass)
 {
     ui->setupUi(this);
-    QPixmap pix("D:/MIDPROJECT/LearningManagementSystem/Pics/Background");
-    ui->background_img->setPixmap(pix);
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    ui->background_image->setPixmap(pic);
 }
 
 ShowClass::~ShowClass()

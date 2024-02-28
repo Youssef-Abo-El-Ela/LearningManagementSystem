@@ -2,12 +2,15 @@
 #include "globals.h"
 #include "ui_showstudents.h"
 #include "show.h"
-
+#include "QPixmap"
 showstudents::showstudents(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::showstudents)
 {
     ui->setupUi(this);
+
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    this->ui->background_image->setPixmap(pic);
 }
 
 showstudents::~showstudents()

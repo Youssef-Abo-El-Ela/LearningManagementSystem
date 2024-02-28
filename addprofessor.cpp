@@ -9,8 +9,8 @@ AddProfessor::AddProfessor(QWidget *parent)
     , ui(new Ui::AddProfessor)
 {
     ui->setupUi(this);
-    QPixmap pic("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/LearningManagementSystem/Pics/Background.png");
-    ui->background_img->setPixmap(pic);
+     QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    ui->background_image->setPixmap(pic);
 }
 
 AddProfessor::~AddProfessor()

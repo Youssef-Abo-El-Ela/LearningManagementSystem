@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>776</width>
-    <height>628</height>
+    <width>700</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,11 +16,19 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>260</y>
-     <width>81</width>
-     <height>71</height>
+     <x>480</x>
+     <y>400</y>
+     <width>111</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #004080; /* Dark blue for the button background */
+    color: #FFFFFF; /* White text for better contrast */
+    border-radius: 10px; /* Adjust border radius for rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+ background-color: #0059b3; /* Lighter blue on hover */
+background-color: #00264d; /* Darker blue when pressed */</string>
    </property>
    <property name="text">
     <string>Show</string>
@@ -32,15 +40,50 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>120</y>
-     <width>601</width>
-     <height>391</height>
+     <x>100</x>
+     <y>100</y>
+     <width>521</width>
+     <height>281</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #004080; /* Dark blue for the table background */
+    color: #FFFFFF; /* White text for better contrast */
+    border: 1px solid #CCCCCC; /* Light gray border around the table */
+    selection-background-color: #0077B6; /* Slightly lighter blue for selected rows */
+    selection-color: #FFFFFF; /* White text for selected rows */
+    alternate-background-color: #003366; /* Darker blue for alternate rows */
+}
+
+QTableWidget::item {
+    padding: 10px; /* Adjust padding as needed */
+}
+
+QHeaderView::section {
+    background-color: #003366; /* Darker blue background for header */
+    color: #FFFFFF; /* White text for header */
+    padding: 8px; /* Adjust padding as needed */
+}</string>
    </property>
    <property name="editTriggers">
     <set>QAbstractItemView::NoEditTriggers</set>
    </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>85</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
    <column>
     <property name="text">
      <string>First Name</string>
@@ -75,16 +118,41 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>560</y>
-     <width>80</width>
-     <height>18</height>
+     <x>140</x>
+     <y>400</y>
+     <width>111</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #004080; /* Dark blue for the button background */
+    color: #FFFFFF; /* White text for better contrast */
+    border-radius: 10px; /* Adjust border radius for rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+ background-color: #0059b3; /* Lighter blue on hover */
+background-color: #00264d; /* Darker blue when pressed */</string>
    </property>
    <property name="text">
     <string>Back</string>
    </property>
   </widget>
+  <widget class="QLabel" name="background_image">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <zorder>background_image</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>pushButton_2</zorder>
  </widget>
  <resources/>
  <connections/>

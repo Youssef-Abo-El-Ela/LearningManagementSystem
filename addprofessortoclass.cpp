@@ -13,6 +13,9 @@ addprofessortoclass::addprofessortoclass(QWidget *parent)
     , ui(new Ui::addprofessortoclass)
 {
     ui->setupUi(this);
+
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    ui->background_image->setPixmap(pic);
 }
 
 addprofessortoclass::~addprofessortoclass()

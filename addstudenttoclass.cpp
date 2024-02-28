@@ -12,7 +12,10 @@ AddStudentToClass::AddStudentToClass(QWidget *parent)
     , ui(new Ui::AddStudentToClass)
 {
     ui->setupUi(this);
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    ui->background_image->setPixmap(pic);
 }
+
 
 AddStudentToClass::~AddStudentToClass()
 {

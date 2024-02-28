@@ -8,8 +8,8 @@ AddStudent::AddStudent(QWidget *parent)
     , ui(new Ui::AddStudent)
 {
     ui->setupUi(this);
-    QPixmap pix("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/LearningManagementSystem/Pics/Background.png");
-    ui->background_img->setPixmap(pix);
+     QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    ui->background_image->setPixmap(pic);
 }
 
 AddStudent::~AddStudent()

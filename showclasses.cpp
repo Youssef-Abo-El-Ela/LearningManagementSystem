@@ -8,8 +8,8 @@ ShowClasses::ShowClasses(QWidget *parent)
     , ui(new Ui::ShowClasses)
 {
     ui->setupUi(this);
-    QPixmap background("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/Pics/Background.png");
-    ui->background_image->setPixmap(background);
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    this->ui->background_image->setPixmap(pic);
 }
 
 ShowClasses::~ShowClasses()

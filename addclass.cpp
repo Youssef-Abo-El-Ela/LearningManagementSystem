@@ -11,7 +11,7 @@ AddClass::AddClass(QWidget *parent)
     , ui(new Ui::AddClass)
 {
     ui->setupUi(this);
-    QPixmap pic("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/Pics/Background.png");
+     QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
     ui->background_image->setPixmap(pic);
 }
 

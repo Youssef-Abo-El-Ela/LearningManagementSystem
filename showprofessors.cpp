@@ -2,12 +2,16 @@
 #include "globals.h"
 #include "ui_showprofessors.h"
 #include "show.h"
+#include "QPixmap"
 ShowProfessors::ShowProfessors(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::ShowProfessors)
 {
     ui->setupUi(this);
+   QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
+    this->ui->background_image->setPixmap(pic);
 }
+
 
 ShowProfessors::~ShowProfessors()
 {

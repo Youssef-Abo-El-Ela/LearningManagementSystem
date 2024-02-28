@@ -11,7 +11,7 @@ Search::Search(QWidget *parent)
     , ui(new Ui::Search)
 {
     ui->setupUi(this);
-    QPixmap pic("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/LearningManagementSystem/Pics/Background.png");
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/showss");
     this->ui->background_image->setPixmap(pic);
 }
 

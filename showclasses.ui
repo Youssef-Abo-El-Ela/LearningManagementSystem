@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>668</width>
-    <height>561</height>
+    <width>700</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,20 +16,32 @@
   <widget class="QListWidget" name="listWidget">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>190</y>
-     <width>161</width>
+     <x>210</x>
+     <y>110</y>
+     <width>231</width>
      <height>221</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget {
+    background-color: #CCE5FF; /* Light blue background for list widget */
+    border: 1px solid #004080; /* Dark blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Adjust horizontal and vertical padding as needed */
+}
+QListWidget::item {
+    padding: 5px 0; /* Adjust vertical padding for list items */
+    color: #004080; /* Dark blue text color for list items */
+}</string>
    </property>
   </widget>
   <widget class="QLabel" name="background_image">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>90</y>
-     <width>500</width>
-     <height>345</height>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>500</height>
     </rect>
    </property>
    <property name="text">
@@ -39,24 +51,41 @@
   <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>160</y>
+     <x>240</x>
+     <y>80</y>
      <width>151</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#17252a;&quot;&gt;Please select a class&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#004080;&quot;&gt;Please select a class&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>460</y>
-     <width>81</width>
-     <height>71</height>
+     <x>410</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #004080; /* Dark blue background for buttons */
+    color: #FFFFFF; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding as needed */
+}
+
+QPushButton:hover {
+    background-color: #0059b3; /* Lighter blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #00264d; /* Darker blue when pressed */
+}</string>
    </property>
    <property name="text">
     <string>Show</string>
@@ -65,11 +94,28 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>490</y>
-     <width>80</width>
-     <height>18</height>
+     <x>170</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #004080; /* Dark blue background for buttons */
+    color: #FFFFFF; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding as needed */
+}
+
+QPushButton:hover {
+    background-color: #0059b3; /* Lighter blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #00264d; /* Darker blue when pressed */
+}</string>
    </property>
    <property name="text">
     <string>Back</string>

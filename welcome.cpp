@@ -6,7 +6,9 @@
 #include "fstream"
 #include "sstream"
 
-
+#include <QApplication>
+#include <QPushButton>
+#include <QPalette>
 using namespace std;
 
 fstream export_csv;
@@ -16,7 +18,7 @@ Welcome::Welcome(QWidget *parent)
     , ui(new Ui::Welcome)
 {
     ui->setupUi(this);
-    QPixmap pic("D:/University/BioMedical/Second Year/Learning_Managment_System_Project/LMS/Pics/Background.png");
+    QPixmap pic("D:/MIDPROJECT/LearningManagementSystem/Pics/background_img");
     ui->backgroundimage->setPixmap(pic);
 }
 
